@@ -2,17 +2,15 @@
 SimplePlaces
 ==========
 SimplePlaces is a sample application which demonstrates the usage of the Place 
-Monitor API in Windows Phone 8.1. This application shows the known places on 
-the map and by tapping the places push pin, more information about the 
-selected place. The user is able to see the places visited from the last seven
+Monitor API in Windows Phone 8.1. This application shows the known places on the map and by tapping the places push pin, more information about the selected place. The user is able to see the places visited from the last seven
 days as well as places history by using the application bar buttons.
 
 1. Instructions
 --------------------------------------------------------------------------------
 
-Learn about the Lumia SensorCore SDK from the Lumia Developer's Library. The
-example requires the Lumia SensorCore SDK's NuGet package but will retrieve it
-automatically (if missing) on first build.
+Learn about the Lumia SensorCore SDK from the Lumia Developer's Library. 
+The example requires the Lumia SensorCore SDK's NuGet package but will retrieve it
+automatically (if missing) on the first build.
 
 To build the application you need to have Windows 8.1 and Windows Phone SDK 8.1
 installed.
@@ -40,14 +38,14 @@ handle the errors when the required features are disabled in the system settings
 Initialize() function contains the compatibility check for devices that have different
 sensorCore SDK service.
 
-UpdateScreenAsync() is the method wich queries the SensorCore SDK Place Monitor for the
+UpdateScreenAsync() is the method which queries the SensorCore SDK Place Monitor for the
 known places during the current day or the last seven days, by calling: GetPlaceHistoryAsync(). 
 Push pins are created to indicate the visited places. Place information is added to the push pin and it will
 be displayed on message dialog when tapped.
 
 ShowHistory() function gets history of places visited from last seven days by calling GetPlaceHistoryAsync()
-and displays the result in a message dialog, by tapping the application bar button.	
-	
+and displays the result in a message dialog, by tapping the application bar button.    
+    
 3. Version history
 --------------------------------------------------------------------------------
 * Version 1.1.0.0: The first release.
